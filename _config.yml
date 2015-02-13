@@ -1,8 +1,8 @@
 ##### Menu
 menu:
-  Home: /
-  Archives: /archives
-  About: /about
+  首页: /
+  归档: /archives
+  关于: /about
 ## you can create `tags` and `categories` folders in `../source`.
 ## And create a `index.md` file in each of them.
 ## set `front-matter`as
@@ -38,7 +38,7 @@ index:
   
 #### Author information
 author:
-  intro_line1:  "Hello ,I'm Larry Page in Google."    ## your introduction on the bottom of the page
+  intro_line1:  "Hello ,I'm A Super in Google."    ## your introduction on the bottom of the page
   intro_line2:  "This is my blog,believe it or not."  ## the 2nd line
   weibo: 1195294274     ## e.g. wuchong1014 or 2176287895 for http://weibo.com/2176287895
   weibo_verifier: efeae95f ## e.g. b3593ceb Your weibo-show widget verifier ,if you use weibo-show it is needed.
@@ -62,6 +62,8 @@ toc:
 ## if you don't want display contents in a specified post,you can modify `front-matter` and add `toc: false`.
 
 #### Links
+linkconfig:
+ showallpage: false
 links:
   阿超的博客: http://www.awolau.com/,分享学习收获
 
@@ -85,8 +87,8 @@ google_analytics:
 ## You MUST upgrade to Universal Analytics first!
 ## https://developers.google.com/analytics/devguides/collection/upgrade/?hl=zh_CN
 baidu_tongji:
-  enable: false
-  sitecode:  ## e.g. e6d1f421bbc9962127a50488f9ed37d1 your baidu tongji site code
+  enable: true
+  sitecode: 14ce12161668fc05d603993c60cc704f ## e.g. e6d1f421bbc9962127a50488f9ed37d1 your baidu tongji site code
 cnzz_tongji:
   enable: true
   siteid: 1254396325   ## e.g. 1253575964 your cnzz tongji site id
