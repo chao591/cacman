@@ -2,6 +2,11 @@
 <a title="<%= __('totop')%>"><img src="/img/scrollup.png"/></a>
 </div>
 <script src="http://libs.baidu.com/jquery/2.1.1/jquery.min.js"></script>
-<script type="text/javascript">var cacman_var = {};<% if (is_post()) { %>cacman_var.is_post=true;<% } %><% if (page.layout=='post'||page.layout=='page'||page.layout=='photo') { %>cacman_var.post_page_photo=true;<% } %><% if (theme.duoshuo_shortname){ %>cacman_var.duoshuo_shortname="<%= theme.duoshuo_shortname %>";<% } %><% if (page.layout=='tags'||page.layout=='categories'){ %>cacman_var.tags_categories=true;<% } %><% if ((page.layout=='post'||page.layout=='page'||page.layout=='photo')&&theme.fancybox){ %>cacman_var.post_page_photo_fancybox=true;<% } %><% if( is_post()&&(page.toc !== false) && theme.toc.aside){ %>cacman_var.post_toc_aside=true;<% } %></script>
+<script type="text/javascript">var cacman_var = {};<% if (is_post()) { %>cacman_var.is_post=true;<% } %><% if (page.layout=='post'||page.layout=='page'||page.layout=='photo') { %>cacman_var.post_page_photo=true;<% } %><% if (theme.duoshuo_shortname){ %>cacman_var.duoshuo_shortname="<%= theme.duoshuo_shortname %>";<% } %><% if (page.layout=='tags'||page.layout=='categories'){ %>cacman_var.tags_categories=true;<% } %><% if( is_post()&&(page.toc !== false) && theme.toc.aside){ %>cacman_var.post_toc_aside=true;<% } %></script>
+<% if ((page.layout=='post'||page.layout=='page'||page.layout=='photo')&&theme.fancybox){ %>
+	<script type="text/javascript">cacman_var.post_page_photo_fancybox=true;</script>
+	<link rel="stylesheet" href="<%- config.root %>fancybox/jquery.fancybox.css" media="screen" type="text/css">
+	<script src="<%- config.root %>fancybox/jquery.fancybox.pack.js"></script>
+<% } %>
 <script src="<%- config.root %>js/main.js"></script>
 <%- partial('mathjax') %>
